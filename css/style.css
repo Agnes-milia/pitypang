@@ -8,3 +8,32 @@ body{
     margin: 40px;
     color: black;
 }
+
+#header{
+    grid-area: header;
+}
+
+#nav{
+    grid-area: nav;
+}
+
+#content{
+    grid-area: content;
+}
+
+#aside{
+    grid-area: aside;
+}
+
+#footer{
+    grid-area: footer;
+}
+
+#wrapper{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "header nav nav"
+        "aside footer content";
+}
